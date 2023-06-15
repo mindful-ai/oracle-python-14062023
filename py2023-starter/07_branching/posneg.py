@@ -14,3 +14,9 @@ print("-"*50)
 print("DIFFERENCE  : ", abs(a - b))
 
 # ---------- print results here with if..else.. block
+if(res > 0):
+    print("The result is positive")
+elif(res < 0):
+    print("The result is negative")
+else:
+    print("The result is zero")

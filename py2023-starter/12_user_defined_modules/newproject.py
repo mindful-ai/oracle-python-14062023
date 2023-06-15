@@ -5,6 +5,9 @@
 # Extract the maximum, minimum and all the prime numbers
 # from the input
 
+#import primes
+from primes import checkprime
+
 # input
 
 N = []
@@ -21,6 +24,10 @@ while True:
 
 # ---------------------------------- start of task
 
+primenumbers = []
+for n in N:
+    if(checkprime(n)):
+        primenumbers.append(n)
 
 # ---------------------------------- end of task
 
@@ -29,4 +36,4 @@ print("-" * 50)
 print(N)
 print("MAXIMUM  : ", max(N))
 print("MINIMUM  : ", min(N))
-print("PRIMES   : ", primes)
+print("PRIMES   : ", primenumbers)
